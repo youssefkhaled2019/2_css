@@ -1,0 +1,147 @@
+---------------------------------------------------------
+*{}
+p{}
+.my-p { }
+#my-p { }
+.one,.two {} grouping
+div .special{} nesting
+---------------------------------------------------------
+width: 70%; 300px; [fit-content ,auto,max-content]
+max-width: 400px;
+
+height:20px ;300px;
+
+
+---------------------------------------------------------
+#ededed 
+#f9f9f9
+#EEEEEE   #EEE
+--------------------------background---------------------
+background: #ddd;
+
+background-color: red; /* Color Name */
+background-color: rgb(0 0 0 / 50%); /* Red, Green, Blue, Alpha Channel */
+background-color: #FF0000; /* Color Hex Code */
+
+background-image: url("../imgs/learn-programming.png");
+background-repeat:repeat ,no-repeat,repeat-x,repeat-y
+
+
+background-attachment:scroll          [scroll,fixed]
+background-position: left top;        left,right,center    top,bottom,center
+                                      30px 0
+                                      20% 20%
+background-size: auto;[auto,cover,contain]
+                         300px 200px   #wedih hight
+                         20% 20%
+------------------------------color-----------------------
+ color: red;
+
+
+-------------------------------font-----------------------
+ font-size: 40px;
+
+--------------------------- commet ----------------------
+/*     */
+---------------------------padding-----------------------
+padding: 0 20px 15px 25px;            Top Right Bottom Left
+padding-bottom: 10px;
+padding-top: 10px;
+------------------------------margin---------------------
+margin: auto; # can add -1  negatve value
+                 20% , 300px  ,,
+-------------------------------border--------------------
+border: 10px solid red;
+border-width: 10px;
+border-color: red red red red;       Top Right Bottom Left
+border-style: solid; [dashed]
+border-radius: 20px;
+
+------------------------------outline---------------------
+outline: 10px solid red;
+
+
+--------------------------------display-------------------------
+display:[block,inline,inline-block,none]
+
+-----------------------------visibility----------------------------
+visibility:hidden [hidden,visible];
+
+
+--------------------------overflow-------------------------------
+
+overflow: visible; [visible,hidden,scroll,auto] 
+overflow-x: hidden;
+
+scrollbar-width: none;
+---------------------------text------------------------------
+
+text-shadow: 0 0 0 red;      H-Shadow V-Shadow Blur Color
+text-align: center;[right,left,center,justify,start,end]
+direction: ltr;[ltr,rtl]
+
+vertical-align: middle;[middle,top,bottom]
+ex:
+<div>Elzero Web <img decoding="async" src="https://placehold.co/200x200" alt=""> School</div>
+img {vertical-align:middle;} 
+
+text-transform: capitalize;[lowercase,capitalize,uppercase,,,,,]
+text-decoration: line-through;   [underline,overline,none,,line-through]
+
+letter-spacing: 2px;
+text-indent: 2px;  # space befor word    # can add -1  negatve value
+line-height: 1; best=1.6==160%
+
+word-spacing: 5px;
+white-space: nowrap; [wrap,nowrap]
+word-break:break-all [break-all-break-word]
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
