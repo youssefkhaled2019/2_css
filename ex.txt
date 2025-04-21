@@ -1,0 +1,25 @@
+  ex:
+  padding: auto  30px;
+  line-height:120px ;
+  --------------------------------------
+  div{
+width: 200px;
+background-color: #eee;
+height: 400px;
+margin:50% auto;
+
+
+} 
+-------------------------------------------
+vertical-align;[baseline,text-top,text-bottom,sub,super] 
+  ex
+     img.b{vertical-align: text-top;}
+     <p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+-------------------------------------------
+<style>
+img.a {
+  vertical-align: baseline;
+}
+</style>
+<h2>vertical-align: baseline (default):</h2>
+<p>An <img class="a" src="/src/sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 

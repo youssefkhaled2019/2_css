@@ -21,14 +21,17 @@ div .special{}                  nesting
 ---------------------------------------------------------
 width: 70%; 300px; [fit-content ,auto,max-content]
 max-width: 400px;
+width: calc();  
 
 height:20px ;300px;
 min-height: 2000px;
-
+max-height: 600px;
 ---------------------------------------------------------
 #ededed 
 #f9f9f9
 #EEEEEE   #EEE
+#f1f1f1; 
+#dddddd #ddd
 --------------------------background---------------------
 background: #ddd;      #   #ffffff url("img_tree.png") no-repeat right top; #shorthand
 
@@ -76,12 +79,20 @@ font-weight: bold;[bold,normal,100->900]
 --------------------------- commet ----------------------
 /*     */
 ---------------------------padding-----------------------
-padding: 0 20px 15px 25px;            Top Right Bottom Left
+#The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+padding: 0 20px 15px 25px;    [cm,%,px]        #Top Right Bottom Left
 padding-bottom: 10px;
 padding-top: 10px;
 ------------------------------margin---------------------
-margin: auto; # can add -1  negatve value
+# The CSS margin properties are used to create space around elements, outside of any defined borders.
+
+margin: auto; # can add -1  negatve value      #Top Right Bottom Left
                  20% , 300px  ,,
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
 -------------------------------border--------------------
 border: 10px solid red;  #shorthand
         none;
@@ -94,9 +105,17 @@ border-color: red red red red;       Top Right Bottom Left
 border-style: solid; [dotted,dashed,solid,double,none,hidden]
 border-radius: 20px;
 
+
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+border-left-width: 1px;
 ------------------------------outline---------------------
 outline: 10px solid red;
 
+outline-style: dotted;[dotted,dashed,solid,double,,]
+outline-color: red; #hsl(0, 100%, 50%),rgb(255, 0, 0),#ff0000,
+outline-width: thin;[thin,medium,4px,,]
 
 --------------------------------display-------------------------
 display:[block,inline,inline-block,none]
@@ -108,56 +127,101 @@ visibility:hidden [hidden,visible];
 --------------------------overflow-------------------------------
 
 overflow: visible; [visible,hidden,scroll,auto] 
-overflow-x: hidden;
+overflow-x: hidden;[auto]
 
 scrollbar-width: none;
 ---------------------------text------------------------------
 
 text-shadow: 0 0 0 red;      H-Shadow V-Shadow Blur Color
-text-align: center;[right,left,center,justify,start,end]
-direction: ltr;[ltr,rtl]
 
-vertical-align: middle;[middle,top,bottom]
+text-align: center;[right,left,center,justify,start,end]   #justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).
+text-align-last;[right,center,left,justify] # The text-align-last property specifies how to align the last line of a text.
+
+direction: ltr;[ltr,rtl]
+unicode-bidi: bidi-override; #ex:.noitcerid txet tfel-ot-thgir si sihT
+
+vertical-align: middle;[middle,top,bottom,,,,,] #[baseline,text-top,text-bottom,sub,super] 
 ex:
 <div>Elzero Web <img decoding="async" src="https://placehold.co/200x200" alt=""> School</div>
 img {vertical-align:middle;} 
 
 text-transform: capitalize;[lowercase,capitalize,uppercase,,,,,]
-text-decoration: line-through;   [underline,overline,none,,line-through]
+text-decoration: line-through;   [underline,overline,none,,line-through]  [overline underline]
+                  underline red double 5px;  #shorthand     # line color style thickness 
 
-letter-spacing: 2px;
-text-indent: 2px;  # space befor word    # can add -1  negatve value
+text-decoration-color: blue;
+text-decoration-style: solid;[solid,double,dotted,dashed,wavy,,]
+text-decoration-thickness: auto; [auto,5px,25%,,,]             #weight
+
+letter-spacing: 2px;   #[-1]                  # property is used to specify the space between the characters in a text.
+text-indent: 2px;  # space free befor text    # can add -1  negatve value
 line-height: 1; best=1.6==160%
 
-word-spacing: 5px;
-white-space: nowrap; [wrap,nowrap]
-word-break:break-all [break-all-break-word]
+word-spacing: 5px;[-2px]                      # property is used to specify the space between the words in a text.
+white-space: nowrap; [wrap,nowrap]            # The white-space property specifies how white-space inside an element is handled.
+word-break:break-all [normal,break-all,break-word]
 
 text-overflow: ellipsis;  #...
 --------------------------cursor-------------------------------
-  cursor: pointer;
+  cursor: pointer; [pointer,grab ]
 
 
 ---------------------------float------------------------------
-float: left;[right,left]
-clear: both;[left,right,both]
+/* solve proplem add overflow:hedin to parent   */
+/* float and with  coming togather  */
+
+float: left;[right,left,inline-end,none ]
+clear: both;[left,right,both,none]                   /*     <div class=".clear"></div>  */
+
+
+-The clear property can have one of the following values:
+    none - The element is not pushed below left or right floated elements. This is default
+    left - The element is pushed below left floated elements
+    right - The element is pushed below right floated elements
+    both - The element is pushed below both left and right floated elements
+    inherit - The element inherits the clear value from its parent
+    
+-When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
 
 
 ------------------------------opacity---------------------------
-opacity: 0.1;
+opacity: 0.1; # 1.0==100%
 
 
 --------------------------------position-------------------------
-  position: absolute; [static,relative<-self,absolute<-on win (free)(),fixed,static,,]
+  position: absolute; [static,relative<-self,absolute<-on win (free)(),fixed,sticky,,]
   top: ;
   right: ;
   left: ;
   bottom: ;
 
----------------------------------------------------------
+ex:
+<div class="relative">
+  <div class="absolute">
 
+-------------------------------Icons--------------------------
+#Font Awesome Icons
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>  #notwork
+</head>
 
+<i class="fas fa-bars"></i>
 
+#Bootstrap Icons
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<i class="glyphicon glyphicon-cloud"></i>
+
+#Google Icons
+
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<i class="material-icons">computer</i>
 ---------------------------------------------------------
 
 

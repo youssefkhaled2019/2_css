@@ -9,12 +9,18 @@ https://fonts.google.com
 https://www.w3schools.com/css/css_rwd_templates.asp
 
 
+https://cdnjs.com/libraries
 
+==========================Icons==============================
+https://fontawesome.com/
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 
+<i class="fas fa-clock"></i>
 
-
-
-
+https://www.w3schools.com/icons/fontawesome5_intro.asp
+========================================================
 
 
 

@@ -7,15 +7,15 @@ CSS Tutorial
                                                                                                     CSS Comments
                                                                                                     CSS Colors
                                                                                                     CSS Backgrounds
-    CSS Borders
-    CSS Margins
-    CSS Padding
-    CSS Height/Width
+                                                                                                    CSS Borders
+                                                                                                    CSS Margins
+                                                                                                    CSS Padding  <------ 2 ex boxsizing + 4 ex 
+                                                                                                    CSS Height/Width
     CSS Box Model
     CSS Outline
-    CSS Text
+                                                                                                    CSS Text
     CSS Fonts
-    CSS Icons
+                                                                                                    CSS Icons
     CSS Links
     CSS Lists
     CSS Tables
