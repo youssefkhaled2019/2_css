@@ -1,6 +1,20 @@
 https://elzero.org/category/assignments/css-assignments/
 https://elzero.org/category/courses/css-course/
+https://www.w3schools.com/css/default.asp
 
-
+========================================================
 
 https://placehold.co/
+https://fonts.google.com
+https://www.w3schools.com/css/css_rwd_templates.asp
+
+
+
+
+
+
+
+
+
+
+

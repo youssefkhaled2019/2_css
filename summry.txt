@@ -1,28 +1,44 @@
 ---------------------------------------------------------
-*{}
-p{}
-.my-p { }
-#my-p { }
-.one,.two {} grouping
-div .special{} nesting
+
+
+---------------------------------------------------------
+----: inherit;
+
+
+
+
+
+calc()
+---------------------------------------------------------
+*{}                          Universal Selector
+p{}                           element Selector
+.my-p { }                      class Selector
+#my-p { }                       id Selector
+p.center{}
+.class.class{}
+.one,.two {}                   grouping
+div .special{}                  nesting
 ---------------------------------------------------------
 width: 70%; 300px; [fit-content ,auto,max-content]
 max-width: 400px;
 
 height:20px ;300px;
-
+min-height: 2000px;
 
 ---------------------------------------------------------
 #ededed 
 #f9f9f9
 #EEEEEE   #EEE
 --------------------------background---------------------
-background: #ddd;
+background: #ddd;      #   #ffffff url("img_tree.png") no-repeat right top; #shorthand
+
+background: transparent;
 
 background-color: red; /* Color Name */
 background-color: rgb(0 0 0 / 50%); /* Red, Green, Blue, Alpha Channel */
+                     rgb(255,0,0)       rgba(0, 128, 0, 0.3) 
 background-color: #FF0000; /* Color Hex Code */
-
+                    
 background-image: url("../imgs/learn-programming.png");
 background-repeat:repeat ,no-repeat,repeat-x,repeat-y
 
@@ -36,11 +52,27 @@ background-size: auto;[auto,cover,contain]
                          20% 20%
 ------------------------------color-----------------------
  color: red;
-
-
+       hsl(0, 100%, 50%)
+       rgb(255,0,0)   
+       rgba(0, 128, 0, 0.3) 
+         rgb(0 0 0 / 50%)
+         #FF0000;
+       hsla(9, 91.10%, 39.80%, 0.50);
 -------------------------------font-----------------------
- font-size: 40px;
+ font-size: 40px;               [px,em,,2rem,5vw,%]    [,large,small,medium,xx-large]
+font-family: 'Times New Roman', Times, serif;  
+              Arial, Helvetica, sans-serif;
 
+
+
+font-style: italic; [italic,oblique,normal] 
+font-variant: small-caps;
+font-weight: bold;[bold,normal,100->900]
+
+@font-face {
+  font-family: "nyfont";
+  src: url();
+}              
 --------------------------- commet ----------------------
 /*     */
 ---------------------------padding-----------------------
@@ -51,10 +83,15 @@ padding-top: 10px;
 margin: auto; # can add -1  negatve value
                  20% , 300px  ,,
 -------------------------------border--------------------
-border: 10px solid red;
-border-width: 10px;
+border: 10px solid red;  #shorthand
+        none;
+
+border-left: 6px solid red;
+border-right-style: solid;
+
+border-width: 10px; [5px,medium,thick]
 border-color: red red red red;       Top Right Bottom Left
-border-style: solid; [dashed]
+border-style: solid; [dotted,dashed,solid,double,none,hidden]
 border-radius: 20px;
 
 ------------------------------outline---------------------
@@ -95,21 +132,27 @@ line-height: 1; best=1.6==160%
 word-spacing: 5px;
 white-space: nowrap; [wrap,nowrap]
 word-break:break-all [break-all-break-word]
----------------------------------------------------------
+
+text-overflow: ellipsis;  #...
+--------------------------cursor-------------------------------
+  cursor: pointer;
 
 
-
----------------------------------------------------------
-
-
-
----------------------------------------------------------
+---------------------------float------------------------------
+float: left;[right,left]
+clear: both;[left,right,both]
 
 
+------------------------------opacity---------------------------
+opacity: 0.1;
 
----------------------------------------------------------
 
-
+--------------------------------position-------------------------
+  position: absolute; [static,relative<-self,absolute<-on win (free)(),fixed,static,,]
+  top: ;
+  right: ;
+  left: ;
+  bottom: ;
 
 ---------------------------------------------------------
 
