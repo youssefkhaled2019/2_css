@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .l1 ul {
+        border: 1px solid red;
+        list-style-position: inside;
+        width: 300px;
+      }
+      .l1 ul li {
+        background-color: rgb(194, 169, 218);
+      }
+      .l2 ul {
+        border: 1px solid red;
+        list-style-position: outside;
+      }
+      .l2 ul li {
+        background-color: blueviolet;
+      }
+      /* --------------------------------- */
+      .l3 ol {
+        background: #ff9999;
+        padding: 20px;
+      }
+
+      .l3 ul {
+        background: #3399ff;
+        padding: 20px;
+      }
+
+      .l3 ol li {
+        background: #ffe5e5;
+        color: darkred;
+        padding: 5px;
+        margin-left: 35px;
+      }
+
+      .l3 ul li {
+        background: #cce5ff;
+        color: darkblue;
+        margin: 5px;
+      }
+      /* --------------------------------- */
+      .l4 ul {
+        border-left: 5px solid red;
+        background-color: #f1f1f1;
+        list-style-type: none;
+        padding: 10px 20px;
+      }
+      /* --------------------------------- */
+      .l5 ul {
+        list-style-type: none;
+        padding: 0;
+        border: 1px solid #ddd;
+      }
+
+      .l5 ul li {
+        padding: 8px 16px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .l5 ul li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>list-style-position</h1>
+    <div class="l1">
+      <ul>
+        <li>a11111111</li>
+        <li>a2222222222</li>
+        <li>a3333333333</li>
+      </ul>
+    </div>
+    <div class="l2">
+      <ul>
+        <li>a11111111</li>
+        <li>a2222222222</li>
+        <li>a3333333333</li>
+      </ul>
+    </div>
+
+    <hr />
+    <br />
+
+    <div class="l3">
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <hr />
+      <br />
+    </div>
+    <div class="l4">
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+    <div class="l5">
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+    </div>
+  </body>
+</html>

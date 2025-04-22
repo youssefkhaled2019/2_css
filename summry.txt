@@ -17,7 +17,36 @@ p{}                           element Selector
 p.center{}
 .class.class{}
 .one,.two {}                   grouping
+
 div .special{}                  nesting
+.one span {}
+table thead td{}
+
+
+
+
+#pseudo-classes
+a:link {}
+a:visited {}
+a:hover {}                      a:hover MUST come after a:link and a:visited
+a:active {}                     a:active MUST come after a:hover
+:empty {}
+.ch:checked {}
+.in:focus {}
+:last-child {}
+
+#pseudo-elements
+.two::first-letter{}
+.three::first-line{}
+::selection {}
+
+---------------------------------------------------------
+
+
+  -webkit-border-radius: 10px;               -webkit- => Chrome, Safari, New Opera Version
+  -moz-border-radius: 10px;                  -moz- => Firefox
+  -o-border-radius: 10px;                    -o- => Old Version of Opera 
+  -ms-border-radius: 10px;                   -ms- => Ie, Edge
 ---------------------------------------------------------
 width: 70%; 300px; [fit-content ,auto,max-content]
 max-width: 400px;
@@ -62,7 +91,11 @@ background-size: auto;[auto,cover,contain]
          #FF0000;
        hsla(9, 91.10%, 39.80%, 0.50);
 -------------------------------font-----------------------
- font-size: 40px;               [px,em,,2rem,5vw,%]    [,large,small,medium,xx-large]
+ font-size: 40px;               [px,em,,2rem,5vw,%]    [,large,small,medium,xx-large]              note:font-size/line-height
+           1.875em; /* 30px/16=1.875em */ 
+           0.875em; /* 14px/16=0.875em */
+           2.5em; /* 40px/16=2.5em */
+
 font-family: 'Times New Roman', Times, serif;  
               Arial, Helvetica, sans-serif;
 
@@ -76,6 +109,9 @@ font-weight: bold;[bold,normal,100->900]
   font-family: "nyfont";
   src: url();
 }              
+
+
+
 --------------------------- commet ----------------------
 /*     */
 ---------------------------padding-----------------------
@@ -116,7 +152,7 @@ outline: 10px solid red;
 outline-style: dotted;[dotted,dashed,solid,double,,]
 outline-color: red; #hsl(0, 100%, 50%),rgb(255, 0, 0),#ff0000,
 outline-width: thin;[thin,medium,4px,,]
-
+outline-offset: 15px; #The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
 --------------------------------display-------------------------
 display:[block,inline,inline-block,none]
 
@@ -200,6 +236,29 @@ ex:
 <div class="relative">
   <div class="absolute">
 
+------------------------------ z-index---------------------------
+
+
+ z-index: 3; #note parent have position;
+--------------------------html-list-------------------------------
+
+ul ->  list-style: none;
+                  square inside url("sqpurple.gif"); #Shorthand 
+       padding-left: 0;
+       margin: 0;
+       list-style-position: inside;[inside,outside,] # specifies the position of the list points 
+       list-style-image: url('/src/sqpurple.gif');
+       list-style-type:circle
+
+
+------------------------------ box-shadow---------------------------
+ box-shadow:                           H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+    0 0 10px 0 #F10,
+    0 0 10px 0 #000,
+    0 0 10px 0 #080,
+    0 0 10px 0 #00f,
+    0 0 10px 0 yellow;
+---------------------------------------------------------
 -------------------------------Icons--------------------------
 #Font Awesome Icons
 <head>

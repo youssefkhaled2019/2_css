@@ -11,19 +11,19 @@ CSS Tutorial
                                                                                                     CSS Margins
                                                                                                     CSS Padding  <------ 2 ex boxsizing + 4 ex 
                                                                                                     CSS Height/Width
-    CSS Box Model
-    CSS Outline
+                                                                                                    CSS Box Model
+                                                                                                    CSS Outline
                                                                                                     CSS Text
-    CSS Fonts
+                                                                                                    CSS Fonts
                                                                                                     CSS Icons
-    CSS Links
-    CSS Lists
+                                                                                                    CSS Links
+                                                                                                    CSS Lists
     CSS Tables
-    CSS Display
-    CSS Max-width
-    CSS Position
-    CSS Z-index
-    CSS Overflow
+                                                                                                    CSS Display
+                                                                                                    CSS Max-width
+                                                                                                    CSS Position
+                                                                                                    CSS Z-index
+                                                                                                    CSS Overflow
     CSS Float
     CSS Inline-block
     CSS Align

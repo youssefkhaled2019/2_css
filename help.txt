@@ -1,3 +1,6 @@
+  Vendors Prefixes
+  [2] Vs Code Addon To Add The Prefix
+  [3] Task Runner
 ------------------------------------------------------------
   Block
 
@@ -38,3 +41,11 @@ We can divide CSS selectors into five categories:
     [Pseudo-class selectors] (select elements based on a certain state)
     [ Pseudo-elements selectors ](select and style a part of an element)
     [ Attribute selectors] (select elements based on an attribute or attribute value)
+----------------------------------------------------------------
+In CSS there are five generic font families:
+
+    Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+    Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+    Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+    Cursive fonts imitate human handwriting.
+    Fantasy fonts are decorative/playful fonts.
