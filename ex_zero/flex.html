@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <style>
+      /*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .flex {
+        background-color: #eee;
+        width: 600px;
+        padding: 20px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        /* justify-content: left; */
+     /* align-content: stretch; */
+  
+      
+        /* flex-flow: row wrap; #flex-wrap  +flex-direction
+           flex-wrap: nowrap;[nowrap,wrap,wrap-reverse,]
+           flex-direction: column; [row,column,row-reverse,column-reverse] 
+           
+           justify-content: flex-start;[flex-start,flex-end,center,space-between,space-around,space-evenly]
+             align-items:stretch ;[stretch,flex-start,flex-end,center,]
+
+                align-content: stretch;[stretch,flex-start,flex-end,center,space-between,space-around,space-evenly]
+
+
+                             flex-grow: 0;[0,1,3,....]
+
+
+
+           */
+      }
+      .flex div {
+        background-color: #f00;
+        color: white;
+        width: 24%;
+        text-align: center;
+        padding: 20px;
+        margin-left: 1px;
+        margin-top: 3px;
+      }
+      .flex div:hover{
+        /* box-shadow: 1px 1px black; */
+        border-bottom: 3px solid rgb(129, 129, 129) ;
+      } 
+      .float {
+        overflow: hidden;
+        background-color: #eee;
+        width: 600px;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      .float div {
+        background-color: #f00;
+        color: white;
+        float: right;
+        width: 25%;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="flex">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Four</div>
+      <div>Four</div>
+    </div>
+    <hr />
+    <h3>Float</h3>
+    <div class="float">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+  </body>
+</html>

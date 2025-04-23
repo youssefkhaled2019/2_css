@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .center1 {
+        padding: 70px 0;
+        border: 3px solid green;
+        text-align: center;
+      }
+      /* ------------------------------------- */
+      .center2 {
+        line-height: 200px;
+        height: 200px;
+        border: 3px solid green;
+        text-align: center;
+      }
+
+      .center2 p {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      /* ------------------------------------- */
+
+      .center3 {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .center3 p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      /* ------------------------------------- */
+
+      .center4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="center1">
+        <h1>hhhhhhhhhhhhhhh</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quaerat fugiat. Qui suscipit est totam aspernatur eligendi odio mollitia dolores officia, eos, dolore rem doloribus ipsam enim asperiores, minima deserunt!</p>
+    </div>
+    <br />
+    <hr />
+    <div class="center2">
+      <p>I am vertically and horizontally centered. by  inline-block</p>
+    </div>
+
+    <br />
+    <hr />
+    <div class="center3">
+      <p>I am vertically and horizontally centered. by position</p>
+    </div>
+    <br />
+    <hr />
+
+    <div class="center4">
+      <p>I am vertically and horizontally centered. by flex</p>
+    </div>
+  </body>
+</html>
