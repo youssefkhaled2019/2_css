@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <style>
+      /*
+  Filters
+*/
+
+      * {
+        box-sizing: border-box;
+      }
+      .x1 {
+        transition: 0.3s;
+        filter: grayscale(100%);
+      }
+      .x1:hover {
+        filter: grayscale(0);
+      }
+      /* ===================================== */
+      .x2 {
+        transition: 0.3s;
+        filter:blur(4px ); 
+      }
+      /* 4px  */
+      .x2:hover {
+        filter: blur(0);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="x1" decoding="async" src="/src/default.jpg" alt="" />
+    <img class="x2" decoding="async" src="/src/default.jpg" alt="" />
+  </body>
+</html>
