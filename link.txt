@@ -2,6 +2,11 @@ https://elzero.org/category/assignments/css-assignments/
 https://elzero.org/category/courses/css-course/
 https://www.w3schools.com/css/default.asp
 
+
+
+
+========================================================
+https://elzero.org/center-elements-horizontally-and-vertically-css/
 ========================================================
 
 https://placehold.co/
@@ -13,8 +18,10 @@ https://cdnjs.com/libraries
 
 
 
+https://codepen.io/shshaw/pen/pOVKjb  Transform – Origin
 
 https://flexboxfroggy.com/ #flex game
+https://cssgridgarden.com/  #grid game
 ==========================Icons==============================
 https://fontawesome.com/
 <head>
