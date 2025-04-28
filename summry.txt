@@ -91,8 +91,8 @@ background-size: auto;[auto,cover,contain]
          #FF0000;
        hsla(9, 91.10%, 39.80%, 0.50);
 -------------------------------font-----------------------
- font-size: 40px;               [px,em,,2rem,5vw,%]    [,large,small,medium,xx-large]              note:font-size/line-height
-           1.875em; /* 30px/16=1.875em */ 
+ font-size: 40px;               [px,em,,2rem,5vw,%]    [,large,small,medium,xx-large]              note:font-size/line-height 
+           1.875em; /* 30px/16=1.875em */     note:Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
            0.875em; /* 14px/16=0.875em */
            2.5em; /* 40px/16=2.5em */
 
@@ -102,7 +102,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 font-style: italic; [italic,oblique,normal] 
-font-variant: small-caps;
+font-variant: small-caps; [normal,small-caps] 
 font-weight: bold;[bold,normal,100->900]
 
 @font-face {
@@ -111,6 +111,8 @@ font-weight: bold;[bold,normal,100->900]
 }              
 
 
+https://www.w3schools.com/css/css_font_websafe.asp
+https://www.w3schools.com/css/css_font_google.asp
 
 --------------------------- commet ----------------------
 /*     */
@@ -154,7 +156,7 @@ outline-color: red; #hsl(0, 100%, 50%),rgb(255, 0, 0),#ff0000,
 outline-width: thin;[thin,medium,4px,,]
 outline-offset: 15px; #The outline-offset property adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.
 --------------------------------display-------------------------
-display:[block,inline,inline-block,none]
+display:[block,inline,inline-block,none,,inline-flex]
 
 -----------------------------visibility----------------------------
 visibility:hidden [hidden,visible];
@@ -164,6 +166,8 @@ visibility:hidden [hidden,visible];
 
 overflow: visible; [visible,hidden,scroll,auto] 
 overflow-x: hidden;[auto]
+overflow-wrap:normal [normal,break-word,anywhere] #Specifies whether or not the browser can break lines with long words, if they overflow its container
+
 
 scrollbar-width: none;
 ---------------------------text------------------------------
@@ -175,6 +179,7 @@ text-align-last;[right,center,left,justify] # The text-align-last property speci
 
 direction: ltr;[ltr,rtl]
 unicode-bidi: bidi-override; #ex:.noitcerid txet tfel-ot-thgir si sihT
+                             # ex  This is right-to-left text direction. => noitcerid txet tfel-ot-thgir si sihT
 
 vertical-align: middle;[middle,top,bottom,,,,,] #[baseline,text-top,text-bottom,sub,super] 
 ex:
@@ -233,31 +238,34 @@ clear: both;[left,right,both,none]                   /*     <div class=".clear">
 
 
 #child
- flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+ flex: 0 1 Auto  [Flex Grow] [Flex Shrink] [Flex Basis]
  flex-grow: 0;[0,1,3,....]
  flex-shrink: 1;[1,2,3,4,5]
  order: 0;[0,1,2,3,4]#-1
- flex-basis: auto;
+ flex-basis: auto;         #??
  align-items: center;[stretch,flex-end, flex-start,center,,]
  align-self:[flex-end, flex-start] # you can apply to individual                                             H only item == align-items
 
 
 
- -------------------------------------------------------------------------
+ ------------------------------------grid-------------------------------------
  #parent
 display: grid;[inline-grid ]
-grid-template-columns: 100px 100px 100px 200px
+grid-template-columns: 100px 100px 100px 200px             
                          25% 50% 25%
                          auto auto auto auto auto
                          100px 100px 1fr 2fr
                          repeat(auto-fill, minmax(200px, 1fr));  responsave
+                         minmax(200px,400px)
+                         repeat(auto-fill,200px)
 
-grid-template-rows: repeat(3, 1fr);          repeat(3, auto);
+
+grid-template-rows: repeat(3, 1fr);          repeat(3, auto);     /*  px ,% ,auto */
                     100px 100px 100px
                     100px auto 100px     
 row-gap: 10px;
 column-gap: 10px;
-gap: [Row Gap] [Column Gap]        
+gap: 10px 20px;     [Row Gap] [Column Gap]        
 justify-content: space-between;[flex-start,flex-end,center,space-between,space-around,space-evenly]              V
 align-content: space-between; [stretch,flex-start,flex-end,center,space-between,space-around,space-evenly]           betwen item          
 grid-template-areas:
@@ -298,7 +306,16 @@ ex:
 ------------------------------ z-index---------------------------
 
 
- z-index: 3; #note parent have position;
+ z-index: 3; #note parent have position;  /*  note z-index not work  if not found position  */
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+and flex items (elements that are direct children of display: flex elements).
+
+ ex:
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 --------------------------html-list-------------------------------
 
 ul ->  list-style: none;
@@ -307,12 +324,13 @@ ul ->  list-style: none;
        margin: 0;
        list-style-position: inside;[inside,outside,] # specifies the position of the list points 
        list-style-image: url('/src/sqpurple.gif');
-       list-style-type:circle
+       list-style-type:circle  [none,circle,square,upper-roman, lower-alpha,,]
 
 
 ------------------------------ box-shadow---------------------------
- box-shadow:                           H-Shadow | V-Shadow | Blur | Spread | Color | Inset
-    0 0 10px 0 #F10,
+ box-shadow:  0 0 0 0 red inset;                            H-Shadow | V-Shadow | Blur | Spread | Color | Inset or outset
+
+  box-shadow:    0 0 10px 0 #F10,
     0 0 10px 0 #000,
     0 0 10px 0 #080,
     0 0 10px 0 #00f,
@@ -322,29 +340,81 @@ box-sizing:[content-box defalt , border-box ]
 
 
 ---------------------------------transition-----------------------------
- transition-duration: 1s;[1000ms]
+ transition-duration: 1s;[1000ms]              /*1000ms-1s-500ms-.5s--  */
   transition-delay: 0.2s;
   transition-property: all; #width,width
-  transition-timing-function: ease-in-out;
+                       margin-top,margin-left; /* all-- */   # sreach Animatable CSS properties
+                         #note :transition-property can write spesfic property run  
+
+  transition-timing-function: ease-in-out;  /*ease,linear,ease-in,ease-out,ease-in-out  */
   transition: all 2s 0.5s linear;
               wedih 1s ,hight 3s
-
+              margin-let .6s,margin-top .3s 
+              all 2s 0.3s linear  # property,duration,delay,timing-function
 -----------------------------------Transform--------------------------------------
 
  transform: scaleX(2);[scaleX(2),scaleY(2),scale(2, 2)] #-1
-            rotate(45deg); [rotate(45deg),rotate(1turn),rotate(0.5turn),rotate(0.25turn),,]#-1
-            translate(-100px, -100px);
+            rotate(45deg); [rotate(45deg),rotate(1turn),rotate(0.5turn),rotate(0.25turn),,     ]#-1
+            translate(-100px, -100px);    [translateX(100px),translateY(100px)]                                             /* + ,-100px,% */
             skewX(10deg); [skewX(10deg), skewX(-10deg),skewY(10deg),skewY(-10deg),skew(10deg, 10deg),,,,,,]
             matrix(1.2, 0.2679, 0, 1.2, 20, 20);  #matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
-            transform-origin: 0 50%; 3 px
+            transform-origin: 0 50%; #3px        /* x y */
                               [Left ,Center ,Right ][Top ,Center ,Bottom ,]
 
  transform:scaleX(2) rotate(45deg)
--------------------------------------------------------------------------
+
+
+
+ ------------------------------------------------------------------------------------
+
+ #parent 
+  perspective: 300px;
+  perspective-origin: center center; for translate3d on z axix
+
+ transform: rotate3d(0, 1, 1, 65deg); # x y z degree
+            translate3d(0, 0, 100px); # x y z
+
+----------------------------------------animation--------------------------------------------
+  animation: coloring 3s linear 2s infinite reverse;
+
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;     [normal,reverse,alternate,alternate-reverse,,,] #alternate start from end
+  animation-fill-mode:both;  /* [forwards,backwards,both,] */
+  animation-play-state: running;[running,paused]
+
+@keyframes change-color {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background-color: red;
+  }
+  5% {
+    background-color: blue;
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: red;
+  }
+}
+----------------------------------------[!important]----------------------------------
 
 !important
 
--------------------------------------------------------------------------
+ex:  background-color: red !important;
+--------------------------------[variable ]------------------------------------------
 :root {                                           # Global Variable
   --mainColor: blue;
   --mainPadding: 10px;
@@ -361,7 +431,7 @@ box-sizing:[content-box defalt , border-box ]
 }
 -------------------------------gradient------------------------------------
 
-background-image: linear-gradient(to right ,red , Green)
+background-image: linear-gradient(to right ,red , Green)  /* 0deg -360deg , ... color*/
                                     0deg
                                     360deg
 
@@ -370,8 +440,12 @@ background-image: linear-gradient(to right ,red , Green)
 caret-color: red;    #pointer in text or p -> |
 pointer-events: none;  # close cleck
 
+----------------------------------------[before-after]---------------------------------
+content:counter(counter) 
+content: attr(data-attr)
 
--------------------------------Icons--------------------------
+
+-------------------------------Icons-------------------------- # https://www.w3schools.com/icons/fontawesome5_intro.asp
 #Font Awesome Icons
 <head>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>  #notwork
@@ -395,11 +469,53 @@ pointer-events: none;  # close cleck
 <i class="material-icons">computer</i>
 ---------------------------------------------------------
 
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name
+  - .parent > .child => Direct Child
 
 
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word  ex: Attribute="ffff Value"
+  - [Attribute*=Value] => Contains String  ex: Attribute="ffffValue"
+  - [Attribute^=Value] => Start With A String  ex: Attribute="Value..." or Attribute="Value ..."
+
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :only-child
+   - :only-of-type
 ---------------------------------------------------------
+# .parent > .child => Direct Child
+      .parent
+        .child Direct Child
+        .child Direct Child
+        .child Direct Child
+        .xx
+        .child not Direct Child
+#Element + Other Element => [div + p]
+    div 
+    p
 
-
+#Element ~ Other Elements => [p ~ div]
+p
+...
+div
+...
+div
 
 ---------------------------------------------------------
 

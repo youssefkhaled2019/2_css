@@ -4,12 +4,14 @@ https://www.w3schools.com/css/default.asp
 
 
 
-
+https://codepen.io/
 ========================================================
 https://elzero.org/center-elements-horizontally-and-vertically-css/
 ========================================================
 
 https://placehold.co/
+https://via.placeholder.com/300 
+https://elzero.org/use-placeholder-website-to-generate-images/
 https://fonts.google.com
 https://www.w3schools.com/css/css_rwd_templates.asp
 
@@ -17,7 +19,10 @@ https://www.w3schools.com/css/css_rwd_templates.asp
 https://cdnjs.com/libraries
 
 
+#idm
+https://codepen.io/myleschuahiock/pen/qZOydm
 
+https://jsfiddle.net/6Y8GL/1/
 https://codepen.io/shshaw/pen/pOVKjb  Transform – Origin
 
 https://flexboxfroggy.com/ #flex game
