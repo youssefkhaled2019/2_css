@@ -467,7 +467,7 @@ content: attr(data-attr)
 </head>
 
 <i class="material-icons">computer</i>
----------------------------------------------------------
+------------------------Selectors---------------------------------
 
   CSS Selectors
   - *
@@ -497,7 +497,23 @@ content: attr(data-attr)
   - :first-of-type
   - :last-of-type
   - :only-child
-   - :only-of-type
+  - :only-of-type
+
+                                                                                                                            https://nthmaster.ru/           #nth
+  - :not(Selectors)    ex: p:not(:first-child)
+  - :nth-child(n)      ex: p:nth-child(2) second pragraph from parent ,, even , odd
+  - :nth-last-child(n)
+  - :nth-of-type(n)
+  - :nth-last-of-type(n)
+
+  - :root
+  - :checked
+  - :empty
+  - :disabled
+  - :required               input:required +span:before
+  - :focus
+  - ::selection
+  - ::placeholder
 ---------------------------------------------------------
 # .parent > .child => Direct Child
       .parent
@@ -506,6 +522,7 @@ content: attr(data-attr)
         .child Direct Child
         .xx
         .child not Direct Child
+        .child Direct Child
 #Element + Other Element => [div + p]
     div 
     p
@@ -513,9 +530,12 @@ content: attr(data-attr)
 #Element ~ Other Elements => [p ~ div]
 p
 ...
-div
+div ok
 ...
-div
+.xx
+ div no
+... 
+div ok
 
 ---------------------------------------------------------
 

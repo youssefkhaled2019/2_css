@@ -1,3 +1,4 @@
+https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe
 https://elzero.org/category/assignments/css-assignments/
 https://elzero.org/category/courses/css-course/
 https://www.w3schools.com/css/default.asp
@@ -15,7 +16,7 @@ https://elzero.org/use-placeholder-website-to-generate-images/
 https://fonts.google.com
 https://www.w3schools.com/css/css_rwd_templates.asp
 
-
+https://nthmaster.ru/                                                         #nth
 https://cdnjs.com/libraries
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ------------------------------ 1 ------------------------------ */
+      .child span {
+        color: red;
+      }
+      .parent > .title {
+        color: blue;
+      }
+      .parent > p,
+      div.title {
+        color: green;
+      }
+
+      /* ------------------------- 2 ------------------------------------ */
+
+      .t2 div {
+        background-color: brown;
+        margin: 10px;
+        width: fit-content;
+        max-width: 400px;
+        padding: 20px;
+        color: white;
+        font-size: 23px;
+      }
+      div:last-child {
+        overflow: hidden;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------------------التكليف 01------------------------ -->
+    <div class="parent">
+      <div class="child">This Is Child <span class="title">Title</span></div>
+      <span class="title">Child Title</span>
+      <p>Paragraph Content</p>
+    </div>
+    <div class="title">Section Title</div>
+    <br />
+    <hr />
+    <!-- ---------------------التكليف  02 ------------------------ -->
+
+    <div class="t2">
+      <div>title one</div>
+      <div>title two with more words</div>
+      <div>title three with many many many words</div>
+      <div class="ddd">
+        title one with many many many words title one with many many many words
+        title one with many many many words title one with many many many words
+        title one with many many many words title one with many many many words
+      </div>
+    </div>
+  </body>
+</html>

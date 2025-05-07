@@ -23,3 +23,23 @@ img.a {
 </style>
 <h2>vertical-align: baseline (default):</h2>
 <p>An <img class="a" src="/src/sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+
+
+.circle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ch:checked +label{
+  color: red;
+ 
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ----------------1------------ */
+
+      ._1div {
+        width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      .assign-1-shape-1 {
+        background-color: blueviolet;
+      }
+      .assign-1-shape-2 {
+        background-color: rgb(138, 43, 226);
+        opacity: 0.5;
+      }
+      .assign-1-shape-3 {
+        background-color: hsl(271, 76%, 53%);
+        opacity: 0.1;
+      }
+      /* --------------2-------------- */
+      .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      ._2div {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        padding: 10px;
+        background-image: url(/src/css-assignment-5-8.png);
+        color: white;
+        background-color: rgb(206, 207, 207);
+      }
+      .assign-2-shape-1 {
+        background-repeat: no-repeat;
+      }
+      .assign-2-shape-2 {
+        background-repeat: repeat-y;
+      }
+      .assign-2-shape-3 {
+        background-repeat: repeat-x;
+      }
+      .assign-2-shape-4 {
+        background-repeat: repeat;
+      }
+      /* -------------3--------------- */
+      ._3div {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        padding: 10px;
+        background-image: url(/src/css-assignment-5-8.png);
+        color: rgb(56, 49, 49);
+        background-color: rgb(216, 219, 219);
+      }
+      .assign-3-shape-1 {
+        background-repeat: no-repeat;
+      }
+      .assign-3-shape-2 {
+        background-repeat: repeat-y;
+        background-position: right;
+      }
+      .assign-3-shape-3 {
+        background-repeat: repeat-y;
+        background-position: bottom;
+      }
+
+      .assign-3-shape-4 {
+        background-repeat: repeat-x;
+        background-position: bottom;
+      }
+      /* ------------------4---------------- */
+      ._4div {
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        padding: 10px;
+        background-image: url(/src/css-assignment-5-8.png);
+        color: rgb(0, 0, 0);
+
+        background-color: rgb(216, 219, 219);
+      }
+      .assign-4-shape-1 {
+        background-size: 80%;
+        background-repeat: no-repeat;
+      }
+      .assign-4-shape-2 {
+        background-repeat: repeat-y;
+        background-size: 80%;
+        background-position: right;
+      }
+      .assign-4-shape-3 {
+        background-repeat: repeat-x;
+        background-size: 80%;
+        background-position: bottom;
+      }
+      .assign-4-shape-4 {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------التكليف 01--------------- -->
+
+    <div class="assign-1-shape-1 _1div">Normal Div</div>
+    <div class="assign-1-shape-2 _1div">Normal Div</div>
+    <div class="assign-1-shape-3 _1div">Normal Div</div>
+    <br />
+    <hr />
+    <!-- ------------التكليف 02------------- -->
+    <div class="flex">
+      <div class="assign-2-shape-1 _2div">shape 1</div>
+      <div class="assign-2-shape-2 _2div">shape 2</div>
+      <div class="assign-2-shape-3 _2div">shape 3</div>
+      <div class="assign-2-shape-4 _2div">shape 4</div>
+    </div>
+    <br />
+    <hr />
+
+    <!-- -----------------------التكليف 03---------------------- -->
+    <div class="flex">
+      <!-- <br />
+      <hr /> -->
+      <div class="assign-3-shape-1 _3div">shape 1</div>
+      <div class="assign-3-shape-2 _3div">shape 2</div>
+      <div class="assign-3-shape-3 _3div">shape 3</div>
+      <div class="assign-3-shape-4 _3div">shape 4</div>
+      <div class="assign-3-shape-5 _3div">shape 5</div>
+
+      <!-- <br />
+      <hr /> -->
+    </div>
+    <br />
+    <hr />
+    <!-- --------------التكليف 04----------- -->
+    <div class="flex">
+      <!-- <br />
+      <hr /> -->
+      <div class="assign-4-shape-1 _4div">shape 1</div>
+      <div class="assign-4-shape-2 _4div">shape 2</div>
+      <div class="assign-4-shape-3 _4div">shape 3</div>
+      <div class="assign-4-shape-4 _4div">shape 4</div>
+      <!-- <br />
+      <hr /> -->
+    </div>
+
+    <br />
+    <hr />
+  </body>
+</html>
