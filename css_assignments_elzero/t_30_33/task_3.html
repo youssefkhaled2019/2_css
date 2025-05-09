@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cc {
+        width: 400px;
+        list-style: none;
+      }
+      ul li {
+        background-color: gainsboro;
+        margin: 10px;
+        /* list-style: none; */
+        list-style-position: outside;
+        padding: 10px;
+      }
+      ol li {
+        background-color: white;
+      }
+      .cc2 li {
+        list-style-type: upper-roman;
+      }
+      .cc3 {
+        padding: 0;
+      }
+      .cc3 li {
+        background-color: white;
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="cc">
+      <li>
+        HTML
+        <ol start="10">
+          <li>Slim</li>
+          <li>Pugjs</li>
+          <li>HAML</li>
+        </ol>
+      </li>
+      <li>
+        CSS
+        <ol class="cc2" start="10">
+          <li>SASS</li>
+          <li>LESS</li>
+          <li>PostCSS</li>
+        </ol>
+      </li>
+      <li>
+        JavaScript
+        <ul class="cc3">
+          <li>Vuejs</li>
+          <li>Sveltejs</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

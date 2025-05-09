@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      div {
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+        font-family: "Cairo", sans-serif;
+      }
+      table {
+        width: 700px;
+        /* border-bottom: 2px solid  #68c1cd ; */
+      }
+      table tr th {
+        background-color: #404040;
+        padding: 10px;
+        color: white;
+        font-family: "Cairo", sans-serif;
+        font-weight: 900;
+      }
+      table tr td {
+        background-color: #eeeeee;
+      }
+      table tr td img {
+        margin: 3.5px;
+        width: 70px;
+        height: 70px;
+      }
+
+      table tr td a:first-of-type {
+        background-color: #53bfee;
+        padding: 1px 7px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      table tr td a:last-of-type {
+        background-color: #e91e63;
+        padding: 1px 7px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      table:last-child {
+        border-bottom: 2px solid #68c1cd;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>A basic HTML table</h2>
+
+      <table>
+        <tr>
+          <th>Avatar</th>
+          <th>Group</th>
+          <th>Name</th>
+          <th>Points</th>
+          <th>Control</th>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+          <td>Ninja</td>
+          <td>Ahmed Mohamed</td>
+          <td>120</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+          <td rowspan="2">Shades</td>
+          <td>Shady Nabil</td>
+          <td>180</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+
+          <td>Eman Moahmed</td>
+          <td>160</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+          <td rowspan="2">Shades</td>
+          <td>Shady Nabil</td>
+          <td>180</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+
+          <td>Eman Moahmed</td>
+          <td>160</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+        <tr>
+          <td><img src="/src/default.jpg" alt="" /></td>
+          <td>Ninja</td>
+          <td>Ahmed Mohamed</td>
+          <td>120</td>
+          <td><a href="">View</a> <a href="">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
