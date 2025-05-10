@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px auto;
+      }
+      body > div {
+        background-color: ghostwhite;
+      }
+      div div::before {
+        content: counter(members-counter);
+        background-color: #000000;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        top: -22.3px;
+        left: 31.6px;
+        width: 40px;
+        height: 40px;
+        align-content: center;
+      }
+      div div {
+        width: 100px;
+        height: 100px;
+        background-color: #eeeeee;
+        color: #000000;
+        border: 5px solid #000000;
+        margin: 40px;
+        border-radius: 50%;
+        box-shadow: -10px -10px 0 0 #e91e63, 10px 10px 0 0 #2196f3; /* H-Shadow | V-Shadow | Blur | Spread | Color | Inset or outset */
+        text-align: center;
+        position: relative;
+        align-content: center;
+        counter-increment: members-counter;
+        overflow: visible;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+      <div>Element</div>
+    </div>
+
+    <br />
+    <hr />
+    <div>
+      <div>
+        <img src="/src/default.jpg" alt="" />
+      </div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div><img src="/src/default.jpg" alt="" /></div>
+      <div>Element</div>
+    </div>
+    <br />
+    <hr />
+  </body>
+</html>

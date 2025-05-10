@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+             align-items: center;
+             justify-content: center;
+        align-content: center;
+        }
+      body > div {
+        width: 550px;
+        background-color: ghostwhite;
+        display: flex;
+        align-items: center;
+        align-content: center;
+      }
+      div > div {
+        margin: 10px;
+        padding: 5px;
+        background-color: #eeeeee;
+        width: calc(450px / 2);
+        align-content: center;
+        height: 280.5px;
+      }
+
+      div > div a {
+       display: block;
+       height: 35.6px;
+       margin: 10px;
+       border-radius: 10px;
+        background-color: #53bfee;
+        text-align: center;
+         align-content: center;
+         text-decoration: none;
+         color: white;
+          font-size: 20px;
+        font-weight: bold;
+      }
+      div > div div {
+        text-align: center;
+        align-content: center;
+        background-color: #dddddd;
+        margin: 10px;
+        width: 197.1px;
+        height: 195.8px;
+        border-radius: 50%;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      p::before {
+        content: "";
+        width: 2px;
+        height: 957.6%;
+        background-color: #53bfee;
+        bottom: -127px;
+        position: absolute;
+        left: 13.5px;
+      }
+      p {
+        background-color: #53bfee;
+        border-radius: 50%;
+        padding: 5px;
+        height: 20px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        line-height: 10px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <a href="">Basic</a>
+        <div>Free</div>
+      </div>
+      <p>or</p>
+
+      <div>
+        <a href="">Basic</a>
+        <div>$30</div>
+      </div>
+    </div>
+  </body>
+</html>

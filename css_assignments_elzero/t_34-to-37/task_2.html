@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*  -------------------- التكليف 02  --------------------*/
+
+      /* div {
+        padding: 30px;
+        width: fit-content;
+        margin: 10px auto;
+        background-color: #eee;
+        position: relative;
+      }
+      div::before {
+        content: "1";
+        background-color: #ff0000;
+        padding: 10px 15px;
+        height: 40.1px;
+        position: absolute;
+        text-align: center;
+        left: -18.8px;
+        top: 10.4px;
+        line-height: 39.7px;
+      } */
+
+      /* 
+      
+      
+
+You can't change the position of the ::first-letter selector. Here's a list of what you can change with it
+
+    font properties
+    color properties
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if float is 'none')
+    text-transform (this controls text capitalization)
+    line-height
+    float
+    clear
+
+I'd suggest trying another approach
+
+      
+      
+      */
+
+      div {
+        padding: 25px;
+        background-color: #d3d3d3;
+        font-size: 20px;
+        border: 20px solid white;
+        width: fit-content;
+        margin: 10px auto;
+        /* display: inline-block; */
+      }
+      div::first-letter {
+        background-color: red;
+        font-size: 20px;
+        color: white;
+        padding: 15px;
+        font-weight: 900;
+        margin-left: -40px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ---------------------------التكليف 02------------------------------ -->
+    <div>1 Hello, Welcome To Elzero Web School</div>
+  </body>
+</html>
